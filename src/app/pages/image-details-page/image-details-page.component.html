@@ -1,0 +1,11 @@
+<div class="details">
+  <div class="details__container"><h1 class="details__title"><b>title:</b> {{imgObj.title}}</h1>
+    <img src="{{imgObj.url}}" alt="{{imgObj.title}}">
+    <button *ngIf="!imgObj.wishlist" class="button button__primary" routerLink="/image-list"
+            (click)="updateImgObj(true)">add to wishlist
+    </button>
+    <button *ngIf="imgObj.wishlist" class="button button__orange" routerLink="/image-list"
+            (click)="updateImgObj(false)">remove from wishlist
+    </button>
+  </div>
+</div>

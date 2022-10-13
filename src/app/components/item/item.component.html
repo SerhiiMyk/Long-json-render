@@ -1,0 +1,7 @@
+<div class="item">
+  <div class="item__container" [routerLink]="['../item-details',imgObj.id]">
+    <h2>{{imgObj.title}}</h2>
+    <img src="{{imgObj.url}}" alt="{{imgObj.title}}">
+  </div>
+  <mat-icon *ngIf="imgObj.wishlist" class="item__icon">favorite</mat-icon>
+</div>

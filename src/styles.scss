@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/assets/styles/mixins";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --box-shadow: 20px 10px 40px -2px rgba(85, 91, 147, 0.18);
+  --primary: #131c85;
+  --orange: #dc692c;
+  --font-snow: #FFFFFF;
+  --font-disable: #656161;
+  --wishlist-icon: #cb3434
+}

@@ -1,0 +1,14 @@
+@import "src/assets/styles/mixins";
+@import "src/assets/styles/buttons";
+
+.details {
+  @include flex(row, center, center);
+  height: 100vh;
+
+  &__container {
+    @include flex(column, center, center);
+    padding: 50px;
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+  }
+}

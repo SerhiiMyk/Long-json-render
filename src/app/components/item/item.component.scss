@@ -1,0 +1,20 @@
+@import "src/assets/styles/mixins";
+
+.item {
+  position: relative;
+
+  &__container {
+    @include flex(column, center, center);
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 125px;
+    right: -70px;
+    font-size: 50px;
+    color: var(--wishlist-icon);
+  }
+}
+
+

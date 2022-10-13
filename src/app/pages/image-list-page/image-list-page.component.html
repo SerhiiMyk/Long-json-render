@@ -1,0 +1,3 @@
+<cdk-virtual-scroll-viewport itemSize="270" class="image-list">
+  <app-item class="image-list__item" *cdkVirtualFor="let item of imgData$ | async" [imgObj]="item"></app-item>
+</cdk-virtual-scroll-viewport>
